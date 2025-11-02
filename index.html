@@ -1,105 +1,97 @@
 <!DOCTYPE html>
 <html lang="th">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TheBank VDO2U</title>
-  <link rel="icon" href="https://www.globalvalueth.com/GIPIC/logoTheBankNEW24668.png" type="image/png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FINHOME365 – แนะนำระบบ</title>
+  <link rel="icon" href="https://www.globalvalueth.com/GIPIC/flogo1.png" type="image/png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=TH+Sarabun+New&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://apis.google.com/js/platform.js"></script>
+
   <style>
     body {
-      font-family: 'Noto Serif Thai', sans-serif;
-      background: linear-gradient(135deg, rgb(240, 243, 252), rgb(200, 234, 245), rgb(240, 243, 252));
+      font-family: 'TH Sarabun New', sans-serif;
+      background: linear-gradient(135deg, #fdfcfb, #f8f6f3, #fbf9f6);
       padding: 2rem 1rem;
       display: flex;
       flex-direction: column;
       align-items: center;
+      color: #4b3b28;
+    }
+
+    h4.title {
+      color: #6b4e2e;
+      font-weight: 700;
+      margin-bottom: 0.3rem;
     }
 
     .video-container {
       width: 100%;
       max-width: 900px;
       aspect-ratio: 16 / 9;
-      border-radius: 12px;
+      border-radius: 16px;
       overflow: hidden;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 8px 25px rgba(123, 94, 59, 0.25);
       background: #000;
     }
 
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
+    iframe { width: 100%; height: 100%; border: none; }
 
     .subscribe-section {
       text-align: center;
       margin-top: 1.8rem;
-      background: #ffffff;
+      background: rgba(255, 255, 255, 0.95);
       padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
       width: 900px;
       max-width: 900px;
     }
 
-    .btn-subscribe,
-    .btn-like {
+    .btn-subscribe, .btn-like {
       display: inline-block;
-      background: #cc0000;
       color: white;
       font-size: 1rem;
-      padding: 0.6rem 1.2rem;
+      padding: 0.55rem 1.1rem;
       border-radius: 8px;
       text-decoration: none;
-      box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
-      transition: background 0.3s ease;
-      white-space: nowrap;
+      box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
+      transition: all 0.3s ease;
       margin: 0 10px;
     }
-
+    .btn-subscribe {
+      background: linear-gradient(90deg, #7b5e3b, #a3845c);
+    }
     .btn-subscribe:hover {
-      background: #a00000;
+      background: linear-gradient(90deg, #5f452a, #94724b);
     }
-
     .btn-like {
-      background: #ff4081;
+      background: linear-gradient(90deg, #c8b79b, #e2d4b7);
+      color: #4b3b28;
     }
-
     .btn-like:hover {
-      background: #e91e63;
-    }
-
-    h4.title {
-      margin-bottom: 1rem;
-      color: #d32f2f;
+      background: linear-gradient(90deg, #b8a686, #d6c6a9);
+      color: #3b2d1e;
     }
 
     .footer-note {
-      font-size: 0.85rem;
-      color: #666;
-      margin-top: 0.25rem;
+      font-size: 0.9rem;
+      color: #6b5c4a;
+      margin-top: 0.5rem;
       text-align: center;
     }
 
-    .error {
-      color: red;
-      font-weight: bold;
-      margin-top: 1rem;
-    }
+    a { color: #6b4e2e; text-decoration: none; }
+    a:hover { text-decoration: underline; }
   </style>
 </head>
 
 <body>
-
   <div class="row text-center">
-    <h4 class="title" id="video-title">🎉 อย่าพลาดทุกอัปเดต! 🎉</h4>
-    <div class="footer-note">ลิขสิทธิ์เป็นของ บริษัท โกลบอล แวลู จำกัด แต่เพียงผู้เดียว &copy; พ.ศ.2547</div>
+    <h4 class="title" id="video-title">🎥 แนะนำระบบ FINHOME365</h4>
+    <p class="text-muted small">ระบบบัญชีส่วนบุคคลอัจฉริยะ – โดย บริษัท โกลบอล แวลู จำกัด</p>
   </div>
 
   <div class="video-container" id="video-box">
@@ -107,75 +99,54 @@
   </div>
 
   <div class="subscribe-section">
-    <h5>🎉 กดติดตามช่องของเราเพื่อรับชมวิดีโอใหม่ ๆ ก่อนใคร 😄</h5>
-    <a class="btn-subscribe" href="https://www.youtube.com/@TheBankAcademy?sub_confirmation=1" target="_blank">✅
-      กดติดตามช่อง</a>
-    <a class="btn-like" id="like-button" href="#" target="_blank">❤️ กด Like บน YouTube</a>
+    <h5>💎 ติดตามช่อง FINHOME365 เพื่อรับชมวิดีโอใหม่ ๆ ก่อนใคร</h5>
+    <a class="btn-subscribe" href="https://www.youtube.com/@TheBankAcademy?sub_confirmation=1" target="_blank">
+      <i class="bi bi-youtube me-1"></i> ติดตามช่อง FINHOME365
+    </a>
+    <a class="btn-like" id="like-button" href="#" target="_blank">
+      <i class="bi bi-hand-thumbs-up-fill me-1"></i> กด Like บน YouTube
+    </a>
 
     <div class="mt-4">
-      <h5>📚 หัวข้อแนะนำเพิ่มเติม:</h5>
+      <h5>📘 วิดีโออื่น ๆ ที่น่าสนใจ</h5>
       <div class="row row-cols-1 row-cols-md-3 g-3 text-start">
-        <div class="col"><a href="javascript:void(0)" onclick="playVDO('QmMeYYXZSpY', 'การลงทะเบียนขอใช้ TheBank')" class="btn btn-outline-primary w-100">การลงทะเบียนขอใช้ TheBank</a></div>
-        <div class="col"><a href="javascript:void(0)" onclick="playVDO('QmMeYYXZSpY', 'การลงทะเบียนขอเพิ่มเครื่องใช้ TheBank')" class="btn btn-outline-primary w-100">การลงทะเบียนขอเพิ่มเครื่องใช้ TheBank</a></div>
-        <div class="col"><a href="javascript:void(0)" onclick="playVDO('QmMeYYXZSpY', 'การลงทะเบียนยืนยันเปิดใช้งาน TheBank')" class="btn btn-outline-primary w-100">การลงทะเบียนยืนยันเปิดใช้งาน TheBank</a></div>
-        <div class="col"><a href="javascript:void(0)" onclick="playVDO('QmMeYYXZSpY', 'การติดตั้งระบบ TheBank')" class="btn btn-outline-primary w-100">การติดตั้งระบบ TheBank</a></div>
-        <div class="col"><a href="javascript:void(0)" onclick="playVDO('QmMeYYXZSpY', 'การติดตั้งเครื่องพิมพ์สมุด Compuprint SP40Plus')" class="btn btn-outline-primary w-100">การติดตั้งเครื่องพิมพ์สมุด Compuprint SP40Plus</a></div>
-        <div class="col"><a href="javascript:void(0)" onclick="playVDO('QmMeYYXZSpY', 'การ Set ให้วินโดวส์ใช้ระบบวันที่เวลาภาษาไทย')" class="btn btn-outline-primary w-100">การ Set ให้วินโดวส์ใช้ระบบวันที่เวลาภาษาไทย</a></div>
+        <div class="col"><a href="javascript:void(0)" onclick="playVDO('QmMeYYXZSpY','เริ่มต้นใช้งาน FINHOME365')" class="btn btn-outline-secondary w-100">เริ่มต้นใช้งาน FINHOME365</a></div>
+        <div class="col"><a href="javascript:void(0)" onclick="playVDO('QmMeYYXZSpY','การเพิ่มสมาชิกในบ้าน')" class="btn btn-outline-secondary w-100">การเพิ่มสมาชิกในบ้าน</a></div>
+        <div class="col"><a href="javascript:void(0)" onclick="playVDO('QmMeYYXZSpY','การบันทึกรายรับรายจ่าย')" class="btn btn-outline-secondary w-100">การบันทึกรายรับรายจ่าย</a></div>
+        <div class="col"><a href="javascript:void(0)" onclick="playVDO('QmMeYYXZSpY','การตั้งงบประมาณ')" class="btn btn-outline-secondary w-100">การตั้งงบประมาณ</a></div>
+        <div class="col"><a href="javascript:void(0)" onclick="playVDO('QmMeYYXZSpY','การดูรายงานสรุปและกราฟ')" class="btn btn-outline-secondary w-100">การดูรายงานสรุปและกราฟ</a></div>
+        <div class="col"><a href="javascript:void(0)" onclick="playVDO('QmMeYYXZSpY','การเชื่อมต่อกับ Google Sheets')" class="btn btn-outline-secondary w-100">การเชื่อมต่อกับ Google Sheets</a></div>
       </div>
     </div>
   </div>
 
-<script>
-  const query = new URLSearchParams(window.location.search);
-  const uVDO = query.get("uVDO");
-  const uName = query.get("uName");
-  const uclick = query.get("uclick");
-
-  const videoFrame = document.getElementById("video-frame");
-  const likeButton = document.getElementById("like-button");
-  const title = document.getElementById("video-title");
-
-  // ❌ บรรทัดนี้ทำให้ error เพราะไม่มี element ชื่อ thaiYear
-  // document.getElementById("thaiYear").textContent = new Date().getFullYear() + 543;
-
-  if (uVDO) {
-    playVDO(uVDO, uName);
-  }
-
-  function playVDO(videoID, videoName = "") {
-    const embedUrl = `https://www.youtube.com/embed/${videoID}?autoplay=1&mute=1&loop=1&playlist=${videoID}&rel=0&controls=1&vq=hd1080`;
-
-    videoFrame.src = embedUrl;
-    videoFrame.setAttribute("allow", "autoplay; encrypted-media");
-    videoFrame.setAttribute("allowfullscreen", "true");
-
-    likeButton.href = `https://www.youtube.com/watch?v=${videoID}`;
-
-    if (videoName) {
-      title.textContent = "🎬 " + videoName;
-    }
-  }
-</script>
-  <br>
-  <h3>บริษัท โกลบอลแวลู จำกัด</h3>    
-<div class="footer-note">
-  <strong>สำนักงานใหญ่ :</strong> ศูนย์พัฒนาซอฟต์แวร์เซ็นเตอร์ เชียงใหม่, 
-  <strong>ศูนย์ลูกค้าสัมพันธ์ :</strong> กรุงเทพ |
-  <i class="fas fa-phone-alt"></i> 
-  <a href="tel:0889318109">088-9318109</a>, 
-  <a href="tel:0886031423">088-6031423</a>, 
-  <a href="tel:0956913595">095-6913595</a>, 
-  <a href="tel:0825616969">082-5616969</a> |
-  <i class="fas fa-envelope"></i> 
-  <a href="mailto:globalvalueth@gmail.com">globalvalueth@gmail.com</a> |
-  <i class="fas fa-globe"></i> 
-  <a href="https://www.globalvalueth.com" target="_blank">www.globalvalueth.com</a>
-</div>
-<br>
-  <div style="width: 100vw; background-color: #041C50; color: white; text-align: center; padding: 1rem 0; font-size: 0.95rem; font-weight: 500;">
-    © สงวนลิขสิทธิ์ พ.ศ.2547 - บริษัท โกลบอล แวลู จำกัด
+  <div class="footer-note mt-4">
+    <strong>สำนักงานใหญ่:</strong> เชียงใหม่ | <strong>ศูนย์ลูกค้าสัมพันธ์:</strong> กรุงเทพฯ <br>
+    <i class="bi bi-telephone-fill"></i> <a href="tel:0889318109">088-931-8109</a>, <a href="tel:0956913595">095-691-3595</a> |
+    <i class="bi bi-envelope-fill"></i> <a href="mailto:globalvalueth@gmail.com">globalvalueth@gmail.com</a> |
+    <i class="bi bi-globe"></i> <a href="https://www.globalvalueth.com" target="_blank">www.globalvalueth.com</a>
   </div>
 
-</body>
+  <div style="width:100vw;background:#7b5e3b;color:white;text-align:center;padding:1rem 0;font-size:0.95rem;font-weight:500;margin-top:1rem;">
+    © 2025 FINHOME365 Powered by Global Value Co., Ltd.
+  </div>
 
+  <script>
+    const q = new URLSearchParams(window.location.search);
+    const uVDO = q.get("uVDO");
+    const uName = q.get("uName");
+    const videoFrame = document.getElementById("video-frame");
+    const likeButton = document.getElementById("like-button");
+    const title = document.getElementById("video-title");
+
+    if (uVDO) playVDO(uVDO, uName);
+
+    function playVDO(videoID, videoName="") {
+      const embedUrl = `https://www.youtube.com/embed/${videoID}?autoplay=1&mute=1&loop=1&playlist=${videoID}&rel=0&controls=1&vq=hd1080`;
+      videoFrame.src = embedUrl;
+      likeButton.href = `https://www.youtube.com/watch?v=${videoID}`;
+      title.textContent = "🎬 " + (videoName || "FINHOME365 แนะนำระบบ");
+    }
+  </script>
+</body>
 </html>
